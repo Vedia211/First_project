@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - student_journal@localhost" uuid="2688bfc4-805d-4dd7-8a8d-88bbf8088310">
+    <database-info product="MySQL" version="5.7.10-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="student_journal"/>
+    <table name="student" schema="" catalog="student_journal" type="TABLE">
+      <column name="id_student" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="fname" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="name" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="sname" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <primary-key name="PRIMARY" columns="id_student"/>
+    </table>
+    <table name="student_group" schema="" catalog="student_journal" type="TABLE">
+      <column name="id_group" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="group_name" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <primary-key name="PRIMARY" columns="id_group"/>
+    </table>
+    <table name="student_ticket" schema="" catalog="student_journal" type="TABLE">
+      <column name="id_ticket" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="ticket_number" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id_ticket"/>
+    </table>
+  </data-source>
+</component>
